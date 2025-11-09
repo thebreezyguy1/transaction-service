@@ -14,6 +14,15 @@ A microservice-based transaction simulation system inspired by real banking arch
 
 
 ## 🧱 Setup Instructions
+```bash
+[Mock Transaction Generator] → [Transaction Service] → [RabbitMQ Queue]
+                                       ↓
+                                   [Notification Service]
+                                       ↓
+                                 [Firebase Cloud Messaging]
+                                       ↓
+                                [Mobile/Web Client]
+```
 
 ### 1. Clone the repo
 ```bash
@@ -39,4 +48,4 @@ POST http://localhost:8081/api/transactions/simulate
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green)
-![Build](https://img.shields.io/github/actions/workflow/status/<username>/afriland-transaction-simulator/maven.yml)
+![Build](https://img.shields.io/github/actions/workflow/status/thebreezyguy1/afriland-transaction-simulator/maven.yml)
