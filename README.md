@@ -10,10 +10,6 @@ A microservice-based transaction simulation system inspired by real banking arch
 - **Docker** (containerization)
 
 ## ⚙️ Architecture
-
-
-
-## 🧱 Setup Instructions
 ```bash
 [Mock Transaction Generator] → [Transaction Service] → [RabbitMQ Queue]
                                        ↓
@@ -23,6 +19,8 @@ A microservice-based transaction simulation system inspired by real banking arch
                                        ↓
                                 [Mobile/Web Client]
 ```
+
+## 🧱 Setup Instructions
 
 ### 1. Clone the repo
 ```bash
